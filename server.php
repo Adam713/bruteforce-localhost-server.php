@@ -8,13 +8,13 @@
 
 	<?php
 
-		if(isset($_POST['sub'])) {
+		if(isset($_POST['login'])) {
 
-		$input1 = $_POST['input1'];
+		$input1 = $_POST['username'];
 
-		$input2 = $_POST['input2'];
+		$input2 = $_POST['password'];
 
-		if ( $input1 == "admin" and $input2 == "admin"){
+		if ( $input1 == "admin" and $input2 == "root"){
 			echo "logado on sistema!";
 
 	}else{
@@ -28,9 +28,9 @@
 
 	<form method="POST">
 
-		<input type="text" name="input1">
-		<input type="text" name="input2">
-		<input type="submit" name="sub">
+		<input type="text" name="username">
+		<input type="text" name="password">
+		<input type="submit" name="login">
 		
 	</form>
 
